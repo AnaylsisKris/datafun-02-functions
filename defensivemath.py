@@ -31,6 +31,7 @@ import math
 
 # define some functions
 
+
 def get_circle_area(radius):
     """
     Return area of a circle given the radius.
@@ -38,15 +39,15 @@ def get_circle_area(radius):
     Keyword arguments:
     radius -- the radius of the circle
 
-    This could fail - for example, what is the 
+    This could fail - for example, what is the
     area of a circle qith a negative radius?
     Or a circle with an infinite radius?
 
     """
 
-    # Use a try / except / finally block when something 
+    # Use a try / except / finally block when something
     # could go wrong
-    try: 
+    try:
         area = 2 * math.pi * radius
         return area
     except Exception as ex:
@@ -63,7 +64,7 @@ def print_circle_areas(lst):
     """
     if len(lst) == 0:
         print("Error: please add some items to the list.")
-        quit() # quit the program
+        quit()  # quit the program
 
     # for every item in the list
     for r in lst:
@@ -104,7 +105,7 @@ if __name__ == "__main__":
     print(f"get_circle_area(-16) = {get_circle_area(-16)}")
     print(f"get_circle_area(math.inf) = {get_circle_area(math.inf)}")
     print(f"get_circle_area('five') = {get_circle_area('five')}")
-    print()   
+    print()
     print("Call print_circle_areas() function with a list of values")
     print()
     lst_values = [5, 10, 25, 30, 45, 50]

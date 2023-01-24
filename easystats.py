@@ -19,7 +19,7 @@ Uses only Python Standard Library module:
 import statistics
 import turtle
 
-ready_for_chart = False  # edit this when ready
+ready_for_chart = True
 
 # Descriptive: Univariant Data..................................
 
@@ -113,7 +113,7 @@ print()
 # typically, x (or time) is independent and
 # y is dependent on x (e.g. temperature vs hour of day)
 xtimes = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-yvalues = [2, 5, 8, 20, 21, 23, 24, 27, 30, 31, 31,32]
+yvalues = [2, 5, 8, 20, 21, 23, 24, 27, 30, 31, 31, 32]
 
 # if the lists are not the same size,
 # print an error and quit the program
@@ -123,7 +123,7 @@ if len(xtimes) != len(yvalues):
     quit()
 
 try:
-   
+
     xx_corr = statistics.correlation(xtimes, xtimes)
     xy_corr = statistics.correlation(xtimes, yvalues)
 
@@ -133,7 +133,6 @@ except Exception as e:
     print("Or select your updated conda environment in VS Code.")
     print("VS Code Menu / View / Command Palette / Python: Select Interpretor")
     quit()
-
 
 
 # share what we learned

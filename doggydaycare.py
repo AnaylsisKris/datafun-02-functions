@@ -9,7 +9,7 @@ The name of the module is the name of the file without the extension.
 
 """
 
-import webbrowser # add some fun
+import webbrowser  # add some fun
 
 print("Hello!, We'll ask for three temperatures in Celcius.")
 print()
@@ -29,8 +29,8 @@ temp_3 = float(temp_string_3)
 # find the sum
 sum = temp_1 + temp_2 + temp_3
 
-# find the average - round to 2 decimal places 
-average = round( sum / 3, 2)
+# find the average - round to 2 decimal places
+average = round(sum / 3, 2)
 
 # find the product
 product = temp_1 * temp_2 * temp_3
@@ -57,7 +57,7 @@ print()
 
 utterance1 = "It's below freezing at the Doggy Daycare!"
 utterance2 = "It's freezing at the Doggy Daycare!"
-utterance3 = "It's above freezing at the Doggy Daycare!"  
+utterance3 = "It's above freezing at the Doggy Daycare!"
 temp_freezing = 0
 
 if temp_3 < temp_freezing:

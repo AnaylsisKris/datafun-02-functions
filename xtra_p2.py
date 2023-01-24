@@ -1,6 +1,10 @@
 """
-Optional bonus. See course site for details.
-
+Name: Kristen Finley
+Date: 23Jan2023
+Course: 44-608 Data Analytics Fundamentals
+Module: 2
+Project: 2
+Task: 7) Optional (Bonus)
 
 
 >>> add_two(1,2)
@@ -27,10 +31,10 @@ Optional bonus. See course site for details.
 
 import doctest
 
-# define some existing functions
+
 def add_two(first, second):
     """Return the sum of any two arguments."""
-    sum = first   # fix this line
+    sum = first + second
     return sum
 
 
@@ -38,7 +42,7 @@ def add_triangle_list(list_triangle):
     """Return the sum of three numbers in a list."""
     sum = 0
     for value in list_triangle:
-        sum = sum + 0  # fix this line to add the value instead of 0
+        sum += value
     return sum
 
 
@@ -46,33 +50,25 @@ def add_any(*args):
     """Return the sum of numbers, using built-in *args."""
     sum = 0
     for x in args:
-        sum += 1  # fix this line to add x instead of 1
+        sum += x
     return sum
 
 
 def add_any_with_keywords(**kwargs):
     """Return the sum of numbers, using built-in keyword args, **kwargs."""
     sum = 0
-    for value in kwargs.values():  # use values() - name doesn't matter
-        sum += value  # Use the popular and concise version of sum = sum + x
+    for value in kwargs.values():
+        sum += value
     return sum
 
 
-# TODO: implment a new function to convert celsius to fahrenheit
-# Use round as needed to make the test pass
-# The name of the function is provided in the docstring above
-
-
-
-
-
-
-
-
+def convert_ctof(temp_C):
+    """Return temperature in degrees Celsius to temperature in degrees Fahrenheit"""
+    temp_F = temp_C * (9 / 5) + 32
+    return round(temp_F, 1)
 
 
 if __name__ == "__main__":
-
 
     print("===========================================================")
     print("Running doctest.testmod() function to unit test our code")
